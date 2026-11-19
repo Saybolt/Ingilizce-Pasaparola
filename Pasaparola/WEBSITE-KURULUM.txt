@@ -1,0 +1,26 @@
+Kelime Çemberi — kendi hesap sunucusu
+====================================
+
+Kişisel bilgisayarında çalıştırma
+----------------------------------
+1. Node.js 18 veya üstünü kur.
+2. Bu klasörde START-WEBSITE.bat dosyasına çift tıkla.
+3. Tarayıcıda http://localhost:3000 adresini aç.
+4. Hesap düğmesinden e-posta ve en az 8 karakterli şifreyle kayıt ol.
+
+Kullanıcı hesapları ve oyun kayıtları bu klasördeki data/accounts.json içinde
+tutulur. Dosyayı kimseyle paylaşma. Şifreler açık metin olarak saklanmaz.
+Sunucuyu kapatıp açınca kullanıcı ve oyun kayıtları dosyada kalır; oturum için
+yeniden giriş yapmak gerekebilir.
+
+İnternette herkesin kullanacağı site
+------------------------------------
+Web sayfasıyla beraber server.js dosyasını çalıştırabilen Node.js hosting gerekir.
+Hosting hizmeti PORT değişkenini sağlar. Kalıcı disk bağlayıp DATA_DIR değerini
+bu diske yönlendirin; kalıcı disk olmadan sunucu yeniden dağıtıldığında hesaplar
+ve ilerleme kaybolabilir. HTTPS sağlayan bir hosting kullanın. Uygulamanın
+klasörünü herkesin erişimine açmayın; yalnızca ziyaretçiler site adresini görür.
+
+Başlangıç paketi yönetim paneli veya veritabanı hesabı istemez. Ancak herkesin
+erişeceği internet sunucusu bir hosting hesabı gerektirir. Hesap kurtarma,
+e-posta doğrulama ve gizlilik bildirimi yaygın kullanıma açılmadan önce eklenmeli.
